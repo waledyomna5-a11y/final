@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blossom Boutique</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+<div class="flowers-bg">
+  <span>🌸</span>
+  <span>🌹</span>
+  <span>🌷</span>
+  <span>🌼</span>
+  <span>💐</span>
+  <span>🌸</span>
+  <span>🌹</span>
+  <span>🌷</span>
+</div>
+
+<!-- LOGIN PAGE -->
+
+<div id="loginPage" class="page active">
+
+  <div class="login-box">
+
+    <h1> Blossom Boutique 🌸</h1>
+
+    <input type="text" id="username" placeholder="Username">
+
+    <input type="password" id="password" placeholder="Password">
+
+    <button onclick="login()">Sign In</button>
+
+  </div>
+
+</div>
+
+<!-- HOME PAGE -->
+
+<div id="homePage" class="page">
+
+  <div class="header">
+
+    <div class="logo">
+       Blossom Boutique🌸
+    </div>
+
+    <div class="nav-icons">
+
+      <span onclick="openCart()">
+        🛒 Cart (<span id="cartCount">0</span>)
+      </span>
+
+      <span onclick="logout()">
+        🚪 Logout
+      </span>
+
+    </div>
+
+  </div>
+
+  <h2 class="title">
+    Our Flowers Collection 💗
+  </h2>
+
+  <div class="flowers">
+
+    <!-- ROSE -->
+
+    <div class="flower-card">
+
+      <img src="WhatsApp Image 2026-05-12 at 10.48.07 PM.jpeg">
+
+      <h3>Rose</h3>
+
+      <p class="description">
+        Symbol of love and beauty 🌹
+      </p>
+
+      <p class="price">
+        120 EGP
+      </p>
+
+      <button onclick="openDetails(
+      'Rose',
+      120,
+      'WhatsApp Image 2026-05-12 at 10.48.07 PM.jpeg'
+      )">
+
+        Add To Cart
+
+      </button>
+
+    </div>
+
+    <!-- TULIP -->
+
+    <div class="flower-card">
+
+      <img src="WhatsApp Image 2026-05-12 at 10.49.34 PM.jpeg">
+
+      <h3>Tulip</h3>
+
+      <p class="description">
+        Represents happiness 🌷
+      </p>
+
+      <p class="price">
+        100 EGP
+      </p>
+
+      <button onclick="openDetails(
+      'Tulip',
+      100,
+      'WhatsApp Image 2026-05-12 at 10.49.34 PM.jpeg'
+      )">
+
+        Add To Cart
+
+      </button>
+
+    </div>
+
+    <!-- LILY -->
+
+    <div class="flower-card">
+
+      <img src="WhatsApp Image 2026-05-12 at 10.51.02 PM.jpeg">
+
+      <h3>Lily</h3>
+
+      <p class="description">
+        Symbol of peace 🤍
+      </p>
+
+      <p class="price">
+        150 EGP
+      </p>
+
+      <button onclick="openDetails(
+      'Lily',
+      150,
+      'WhatsApp Image 2026-05-12 at 10.51.02 PM.jpeg'
+      )">
+
+        Add To Cart
+
+      </button>
+
+    </div>
+<div class="flower-card">
+
+  <img src="WhatsApp Image 2026-05-12 at 10.52.03 PM.jpeg">
+
+  <h3>Daisy</h3>
+
+  <p class="description">
+    Symbol of innocence and joy 🌼
+  </p>
+
+  <p class="price">
+    85 EGP
+  </p>
+
+  <button onclick="openDetails(
+  'Daisy',
+  85,
+  'WhatsApp Image 2026-05-12 at 10.52.03 PM.jpeg'
+  )">
+
+    Add To Cart
+
+  </button>
+
+</div>
+<div class="flower-card">
+
+  <img src="WhatsApp Image 2026-05-12 at 10.53.52 PM.jpeg">
+
+  <h3>Peony</h3>
+
+  <p class="description">
+    Represents romance and prosperity 🌺
+  </p>
+
+  <p class="price">
+    180 EGP
+  </p>
+
+  <button onclick="openDetails(
+  'Peony',
+  180,
+  'WhatsApp Image 2026-05-12 at 10.53.52 PM.jpeg'
+  )">
+
+    Add To Cart
+
+  </button>
+
+</div>
+<div class="flower-card">
+
+  <img src="WhatsApp Image 2026-05-12 at 10.55.03 PM.jpeg">
+
+  <h3>Cherry Blossom</h3>
+
+  <p class="description">
+    Beauty and new beginnings 🌸
+  </p>
+
+  <p class="price">
+    170 EGP
+  </p>
+
+  <button onclick="openDetails(
+  'Cherry Blossom',
+  170,
+  'WhatsApp Image 2026-05-12 at 10.55.03 PM.jpeg'
+  )">
+
+    Add To Cart
+
+  </button>
+
+</div>
+<div class="flower-card">
+
+  <img src="WhatsApp Image 2026-05-12 at 10.57.47 PM.jpeg">
+
+  <h3>Lavender</h3>
+
+  <p class="description">
+    Calmness and relaxation 💜
+  </p>
+
+  <p class="price">
+    130 EGP
+  </p>
+
+  <button onclick="openDetails(
+  'Lavender',
+  130,
+  'WhatsApp Image 2026-05-12 at 10.57.47 PM.jpeg'
+  )">
+
+    Add To Cart
+
+  </button>
+
+</div>
+<div class="flower-card">
+
+  <img src="WhatsApp Image 2026-05-12 at 10.59.10 PM.jpeg">
+
+  <h3>Carnation</h3>
+
+  <p class="description">
+    Admiration and affection 🌹
+  </p>
+
+  <p class="price">
+    110 EGP
+  </p>
+
+  <button onclick="openDetails(
+  'Carnation',
+  110,
+  'WhatsApp Image 2026-05-12 at 10.59.10 PM.jpeg'
+  )">
+
+    Add To Cart
+
+  </button>
+
+</div>
+
+  </div>
+
+  <!-- SOCIAL -->
+
+    <div class="social">
+  <a href="#"><i class="fab fa-facebook-f"></i></a>
+  <a href="#"><i class="fab fa-instagram"></i></a>
+  <a href="#"><i class="fab fa-twitter"></i></a>
+</div>
+
+  </div>
+
+</div>
+
+<!-- DETAILS PAGE -->
+
+<div id="detailsPage" class="page">
+
+  <div class="header">
+
+    <div class="logo">
+      Blossom Boutique🌸
+    </div>
+
+    <div class="nav-icons">
+
+      <span onclick="goHome()">
+        🏠 Home
+      </span>
+
+    </div>
+
+  </div>
+
+  <div class="details-box">
+
+    <img id="flowerImage" src="" class="details-image">
+
+    <h2 id="flowerName"></h2>
+
+    <label>
+      Select Color 🎨
+    </label>
+
+    <select id="flowerColor">
+
+      <option>Pink</option>
+
+      <option>White</option>
+
+      <option>Red</option>
+
+      <option>Purple</option>
+
+      <option>Yellow</option>
+
+    </select>
+
+    <label>
+      Choose Type 💐
+    </label>
+
+    <select id="flowerType">
+
+      <option>Single Flower</option>
+
+      <option>Bouquet</option>
+
+    </select>
+
+    <label>
+      Quantity 🌸
+    </label>
+
+    <input type="number" id="flowerQty" value="1" min="1">
+
+    <button onclick="finalAddToCart()">
+
+      Add Final To Cart 🛒
+
+    </button>
+
+  </div>
+
+</div>
+
+<!-- CART PAGE -->
+
+<div id="cartPage" class="page">
+
+  <div class="header">
+
+    <div class="logo">
+      Blossom Boutique🌸
+    </div>
+
+    <div class="nav-icons">
+
+      <span onclick="goHome()">
+        🏠 Home
+      </span>
+
+    </div>
+
+  </div>
+
+  <h2 class="title">
+    Checkout Page 💳
+  </h2>
+
+  <!-- ORDER SUMMARY -->
+
+  <div class="checkout-box">
+
+    <h3>
+      🧾 Order Summary
+    </h3>
+
+    <ul id="orderList"></ul>
+
+    <p>
+      <b>Subtotal:</b>
+      <span id="subtotal">0</span> EGP
+    </p>
+
+    <p>
+      <b>Shipping:</b>
+      <span id="shippingFee">0</span> EGP
+    </p>
+
+    <p>
+      <b>Total:</b>
+      <span id="totalPrice">0</span> EGP
+    </p>
+
+  </div>
+
+  <!-- DELIVERY -->
+
+  <div class="checkout-box">
+
+    <h3>
+      📍 Delivery Information
+    </h3>
+
+    <input type="text" placeholder="Full Name">
+
+    <input type="text" placeholder="Address">
+
+    <input type="text" placeholder="Phone Number">
+
+    <select id="citySelect" onchange="updateShipping()">
+
+      <option value="">
+        Select City
+      </option>
+
+      <option value="cairo">
+        Cairo
+      </option>
+
+      <option value="giza">
+        Giza
+      </option>
+
+      <option value="alex">
+        Alexandria
+      </option>
+
+      <option value="other">
+        Other Cities
+      </option>
+
+    </select>
+
+  </div>
+
+  <!-- PAYMENT -->
+
+  <div class="checkout-box">
+
+    <h3>
+      💳 Payment Method
+    </h3>
+
+    <select id="paymentMethod" onchange="showCard()">
+
+      <option value="">
+        Choose Method
+      </option>
+
+      <option value="cash">
+        Cash
+      </option>
+
+      <option value="card">
+        Credit Card
+      </option>
+
+      <option value="instapay">
+        Instapay
+      </option>
+
+    </select>
+
+    <!-- CREDIT CARD -->
+
+    <div id="cardForm" class="hidden">
+
+      <input type="text" placeholder="Card Number">
+
+      <input type="text" placeholder="Card Holder Name">
+
+      <input type="text" placeholder="Expiry Date">
+
+      <input type="text" placeholder="CVV">
+
+    </div>
+
+  </div>
+
+  <!-- NOTES -->
+
+  <div class="checkout-box">
+
+    <h3>
+      📝 Notes
+    </h3>
+
+    <textarea placeholder="Special request..."></textarea>
+
+  </div>
+
+  <!-- CONFIRM -->
+
+  <button class="confirm-btn" onclick="confirmOrder()">
+
+    Confirm Order 🌸
+
+  </button>
+
+</div>
+
+<!-- SUCCESS PAGE -->
+
+<div id="successPage" class="page">
+
+  <div class="success-box">
+
+    <h1>
+      🎉 Order Confirmed!
+    </h1>
+
+    <p>
+      Thank you for choosing Blossom Boutique 💗
+    </p>
+
+    <h3 id="orderStatus">
+      Status: Processing ⏳
+    </h3>
+
+    <button onclick="downloadInvoice()">
+
+      Download Invoice 🧾
+
+    </button>
+
+    <button onclick="goHome()">
+
+      Back Home 🏠
+
+    </button>
+
+  </div>
+
+</div>
+
+<!-- SOCIAL ICONS -->
+ <footer>
+
+  <p>Follow Us 🌸</p>
+
+  <div class="social">
+    <a href="https://www.facebook.com"><i class="fab fa-facebook-f"></i></a>
+    <a href="https://www.instagram.com"><i class="fab fa-instagram"></i></a>
+    <a href="https://www.whatsapp.com"><i class="fab fa-whatsapp"></i></a>
+  </div>
+
+</footer>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
